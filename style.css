@@ -256,7 +256,7 @@ a {
 }
 
 .top {
-  background-image: url(https://github.com/tatsumi-ryoryo/hotspring-site/blob/main/image/feature-item01.png?raw=true);
+  background-image: url("image/top-bg.png");
   background-position: center;
   background-size: cover;
   height: 674px;
