@@ -1,0 +1,39 @@
+.faq {
+    padding-bottom: 100px;
+    @include overTab {
+        padding-left: 175px;
+        padding-right: 175px;
+    }
+
+}
+
+.inner {
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+.faq-item {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    text-align: center;
+    .question {
+    background-color: cl(white);
+    color: cl(black);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #E5E5E5;
+    }
+    .answer {
+    background-color: #f2f2f2;
+    color: cl(black);
+    padding-bottom: 26px;
+    padding-top: 26px;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: none;
+    }
+
+}
+

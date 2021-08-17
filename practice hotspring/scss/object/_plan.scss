@@ -1,0 +1,110 @@
+.plan {
+
+}
+
+.inner {
+
+}
+
+.rec {
+    .rec-list {
+    display: flex;
+    padding-bottom: 100px;
+}
+
+    .rec-item {
+    display: flex;
+    flex-flow: column-reverse;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 322px;
+
+    .text {
+        color: cl(black);
+        background-color: cl(white);
+        padding: 25px 25px 50px 25px;
+        overflow: hidden;
+        .desc {
+
+        }
+        .price {
+            padding-top: 66px;
+            font-size: 14px;
+            span {
+                color: cl(red);
+
+            }
+        }
+    }
+
+    .image {
+    }
+}
+}
+
+
+
+
+
+
+
+
+.service-wrap {
+    
+    @include overTab {
+        margin-left: 34px;
+    margin-right: 34px;
+    }
+}
+
+.service-list {
+    @include overTab {
+        display: flex;
+    }
+    
+}
+
+.service-item {
+    background-color: cl(white);
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+
+    + .service-item {
+        
+        margin-top: 30px;
+        @include overTab {
+            margin-top: 0;
+            margin-left: 20px;
+        }
+    }
+    
+    @include overTab {
+        width: percentage($number: 420/1280);
+    }
+}
+
+.service-text {
+    color: cl(black);
+    text-align: center;
+    .service-text-main {
+        font-size: 28px;
+    }
+
+    .service-text-sub {
+        padding-top: 40px;
+        padding-bottom: 53px;
+        padding-right: 24px;
+        padding-left: 24px;
+        font-size: 18px
+    }
+}
+
+.service-image {
+    
+    margin: 0 auto;
+    padding-top: 10px;
+        width: 160px;
+}
